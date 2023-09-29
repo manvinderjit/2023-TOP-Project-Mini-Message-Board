@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home Page</a></li>
+        <li><a href="/new">Send New Message</a></li>
+      </ul>
+    </nav>
+    
+    <form method="POST" action="/new">
+        <fieldset>
+          <label for="messageUser">Enter Your Name</label>
+          <input type="text" name="messageUser" id="messageUser">
+          <label for="messageText">Enter Your Message</label>
+          <input type="text" name="messageText" id="messageText">
+        </fieldset>
+        <input type="submit" value="Send Message">
+    </form>
+    
+</body>
+</html>
