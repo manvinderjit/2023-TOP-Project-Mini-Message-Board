@@ -4,19 +4,19 @@ const router = express.Router();
 const messages = [
   {
     text: "Hi there!",
-    user: "Amando",
+    user: "Manvinderjit",
     added: new Date()
   },
   {
     text: "Hello World!",
-    user: "Charles",
+    user: "Manvinder's Friend",
     added: new Date()
   }
 ];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Mini Messageboard", messages: messages });
+  res.render('index', { title: "Manvinderjit's Mini Messageboard", messages: messages });
 });
 
 /* GET new message page. */
